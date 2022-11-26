@@ -14,10 +14,10 @@ fn get_user(uid:i32) -> &'static str {
 }
 
 fn main(){
-    
+    let i:i32 = 123;  // 完整写法
     let name:&'static str="jiang"; // &str 类型
     println!("{}", name);
-
+    println!("{}", i);
     let uid = 101;
     println!("{}", get_user(uid));
 
