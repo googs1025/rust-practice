@@ -4,7 +4,7 @@ mod lib;
 fn main(){
     // let myage=19; // 编译器自动判断
     let myage:u8=19; // 定义类型
-    let youage=myage+2;
+    let youage = myage + 2;
     println!("我的年龄:{}, 你的年龄:{}", myage, youage);
 
     let mut a = 123;
