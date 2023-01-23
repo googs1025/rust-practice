@@ -29,8 +29,10 @@ struct User{
 // 结构体对象的方法
 impl User {
     fn version(&self){
+
         println!("1.000")
     }
+
     fn to_string(&self)->String{
         return String::from(format!("名字:{}, 年龄:{}", &self.name, &self.age));
 
