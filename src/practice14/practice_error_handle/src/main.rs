@@ -1,58 +1,63 @@
 use std::fs;
 use std::fs::File;
-use std::io::Read;
+use std::io::{Error, Read};
+use std::io::ErrorKind;
 
 fn main() {
 
-    let res = test(1);
-    println!("{:?}", res);
-    // 使用if let 判断错误处理
-    if let Ok(s) = &res {
-        println!("测试成功:{}", s)
-    }
-    if let Err(s) = &res {
-        println!("测试失败:{}", s)
-    }
-    println!("Hello, world!");
+    // let res = test(1);
+    // println!("{:?}", res);
+    // // 使用if let 判断错误处理
+    // if let Ok(s) = &res {
+    //     println!("测试成功:{}", s)
+    // }
+    // if let Err(s) = &res {
+    //     println!("测试失败:{}", s)
+    // }
+    // println!("Hello, world!");
+    //
+    // // unwrap
+    // let res1 = test(1);
+    // println!("{}", res1.unwrap());
+    //
+    // // expect
+    // let res2 = test(1);
+    // println!("{}", res2.expect("my error"));
+    //
+    // // unwrap_or
+    // // 不panic 返回设置好的默认值
+    // let res3 = test(11);
+    // println!("{}", res3.unwrap_or("my default value".to_string()));
+    //
+    // // unwrap_or_else()
+    // let res4 = test(11);
+    // // 这里有闭包
+    // println!("{}", res4.unwrap_or_else(|error|{
+    //     error.to_string()
+    // }));
+    //
+    // println!("-------------------------------------");
+    //
+    // let res_err = test_err1();
+    // println!("{}", res_err.unwrap_or_else(|error|{
+    //     error
+    // }));
+    //
+    // let res_err = test_err2();
+    // println!("{}", res_err.unwrap_or_else(|error|{
+    //     error
+    // }));
+    //
+    // println!("-------------------------------------");
+    // let path = "./src/test.txt";
+    // println!("start to read the file");
+    // read_file(path.to_string());
 
-    // unwrap
-    let res1 = test(1);
-    println!("{}", res1.unwrap());
-
-    // expect
-    let res2 = test(1);
-    println!("{}", res2.expect("my error"));
-
-    // unwrap_or
-    // 不panic 返回设置好的默认值
-    let res3 = test(11);
-    println!("{}", res3.unwrap_or("my default value".to_string()));
-
-    // unwrap_or_else()
-    let res4 = test(11);
-    // 这里有闭包
-    println!("{}", res4.unwrap_or_else(|error|{
-        error.to_string()
-    }));
-
-    println!("-------------------------------------");
-
-    let res_err = test_err1();
-    println!("{}", res_err.unwrap_or_else(|error|{
-        error
-    }));
-
-    let res_err = test_err2();
-    println!("{}", res_err.unwrap_or_else(|error|{
-        error
-    }));
-
-    println!("-------------------------------------");
-    let path = "./src/test.txt";
-    println!("start to read the file");
-    read_file(path.to_string())
 
 
+    // read_file_1();
+    // read_file_2();
+    read_file_3();
 }
 
 
@@ -97,6 +102,7 @@ fn test_err1() -> Result<String, String> {
     }
 }
 
+// 错误传播
 fn test_err2() -> Result<String, String> {
     step1()?; // 会直接返回
     step2()?;
@@ -116,4 +122,49 @@ fn read_file(path: String) {
     let mut buf = String::new();
     f.read_to_string(&mut buf).expect("read err");
     println!("{}", buf);
+}
+
+fn read_file_1() {
+    let f = File::open("test.txt");
+
+    let f = match f {
+        Ok(file) => file,
+        Err(error) => {
+            panic!("开始file 错误:{:?}", error)
+        }
+    };
+
+}
+
+
+fn read_file_2() {
+    let f = File::open("test.txt");
+
+    let f = match f {
+        Ok(file) => file,
+        Err(error) => match error.kind() {
+            ErrorKind::NotFound => match File::create("test.txt") {
+                Ok(fc) => fc,
+                Err(e) => panic!("创建file 错误:{:?}", e)
+
+            },
+            other_error=> panic!("开启file 错误:{:?}", other_error),
+        }
+    };
+
+}
+
+// 错误处理使用闭包的方法
+fn read_file_3() {
+    let f = File::open("test.txt").map_err(|error|{
+        if error.kind() == ErrorKind::NotFound {
+            File::create("test.txt").unwrap_or_else(|error| {
+                panic!("创建file 错误:{:?}", error);
+            });
+        } else {
+            panic!("开启file 错误:{:?}", error)
+        }
+    });
+
+
 }
