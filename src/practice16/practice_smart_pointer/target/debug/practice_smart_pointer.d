@@ -1,1 +1,0 @@
-/Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice16/practice_smart_pointer/target/debug/practice_smart_pointer: /Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice16/practice_smart_pointer/src/main.rs

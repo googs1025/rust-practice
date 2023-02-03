@@ -1,8 +1,10 @@
 /target
 .vscode
 .idea/
-/practice15/practice_asynchronous/target
-/practice13/practice_enum/target
-/practice14/practice_error_handle/target
-/practice12/practice_vector/target
+/src/practice17/practice_tokio/target
+/src/practice16/practice_smart_pointer/target
+/src/practice15/practice_asynchronous/target
+/src/practice13/practice_enum/target
+/src/practice14/practice_error_handle/target
+/src/practice12/practice_vector/target
 

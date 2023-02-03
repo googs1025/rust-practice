@@ -1,1 +1,0 @@
-/Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice14/practice_error_handle/target/debug/practice_error_handle: /Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice14/practice_error_handle/src/main.rs
