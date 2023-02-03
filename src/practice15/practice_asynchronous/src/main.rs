@@ -291,7 +291,6 @@ fn test_mutex() {
 // 异步方法
 async fn get_user() -> String {
     thread::sleep(Duration::from_secs(5));
-    // aaa = "jiangjiang".to_string();
     format!("user is {}, score is {}", "jiangjiang", get_score().await)
 }
 

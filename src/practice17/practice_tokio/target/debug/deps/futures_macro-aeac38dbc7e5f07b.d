@@ -1,0 +1,9 @@
+/Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice17/practice_tokio/target/debug/deps/libfutures_macro-aeac38dbc7e5f07b.dylib: /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/lib.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/executor.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/join.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/select.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/stream_select.rs
+
+/Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice17/practice_tokio/target/debug/deps/futures_macro-aeac38dbc7e5f07b.d: /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/lib.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/executor.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/join.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/select.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/stream_select.rs
+
+/Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/lib.rs:
+/Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/executor.rs:
+/Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/join.rs:
+/Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/select.rs:
+/Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-macro-0.3.26/src/stream_select.rs:
