@@ -41,6 +41,54 @@ fn main() {
         println!("{:?}", i);
     }
 
+    // 返回数字最大结果
+    let num_list = vec![23,45,67,8];
+    // let res = largest_num(&num_list);
+    let res = largest_generics(&num_list);
+    println!("res: {}", res);
+
+
+    let char_list = vec!['b', 'c', 'z', 'a'];
+    // let res = largest_char(&char_list);
+    let res = largest_generics(&char_list);
+    println!("res char: {}", res);
 }
 
+fn largest_num(list: &[i32]) -> i32 {
+    let mut largest_num = list[0];
+
+    for &item in list.iter() {
+        if item > largest_num {
+            largest_num = item;
+        }
+    }
+
+    largest_num
+}
+
+fn largest_char(list: &[char]) -> char {
+    let mut largest_char = list[0];
+
+    for &item in list.iter() {
+        if item > largest_char {
+            largest_char = item
+        }
+    }
+
+    largest_char
+}
+
+
+// 使用泛型适配多种类型的输入与返回
+fn largest_generics<T: std::cmp::PartialOrd+Copy>(list: &[T]) -> T {
+    let mut largest = list[0];
+
+    for &item in list.iter() {
+        if item > largest {
+            largest = item;
+        }
+    }
+
+    largest
+}
 
