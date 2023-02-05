@@ -1,3 +1,5 @@
+// 当实现了copy语意，就能在把变量赋值给其他变量，且不影响所有权
+// #[derive(Debug, Copy, Clone)]
 #[derive(Debug)]
 pub struct UserModel {
     user_id: i32,
@@ -5,6 +7,15 @@ pub struct UserModel {
     user_age: u8,
     user_tags: [&'static str;5]
 }
+
+// 不使用注解也可以用这段代码，但少用
+// impl Copy for UserModel {}
+//
+// impl Clone for UserModel {
+//     fn clone(&self) -> UserModel {
+//         *self
+//     }
+// }
 
 pub fn new_user_model() -> UserModel {
     UserModel {
