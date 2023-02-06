@@ -3,6 +3,7 @@ use std::thread;
 use std::time::Duration;
 use std::sync::{mpsc,Arc, Mutex};
 use futures::executor::block_on;
+mod other;
 
 fn main() {
 
@@ -13,10 +14,12 @@ fn main() {
     // practice_channel_send_struct_data();
     // practice_channel_send_struct_data_Arc();
     // test_curl();
-    // test_curl1();
+    test_curl1();
     // test_share1();
     // test_mutex();
-    try_async();
+    // try_async();
+    // other::practice::practice2();
+    other::channel::practice_channel2();
 }
 
 fn new_async() {
