@@ -1,6 +1,8 @@
 /target
 .vscode
 .idea/
+/src/practice22/practice_ctl/target
+/src/practice21/practice_unit_test/target
 /src/practice19/practice_trait/target
 /src/practice17/practice_tokio/target
 /src/practice16/practice_smart_pointer/target
@@ -9,4 +11,4 @@
 /src/practice14/practice_error_handle/target
 /src/practice12/practice_vector/target
 /src/practice12/practice_hash/target
-
+/src/practice9/user/target

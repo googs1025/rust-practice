@@ -19,12 +19,3 @@ fn main(){
     src::src2::helper();
     src::config::show_version()
 }
-
-// fn show_me(){
-    
-//     let my_name="jiangjiang";
-//     let my_age=25;
-
-//     println!("我的名字:{}, 我的年龄:{}", my_name, my_age)
-
-// }
