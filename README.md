@@ -2,7 +2,7 @@
 
 ### 学习rust基础语法记录
 
-```asm
+```bash
 1. practice1: rust简易创建函数且分层调用
 2. practice2: rust简易'static生命周期使用
 3. practice3: rust if语句用法，let xxx if and let if 
