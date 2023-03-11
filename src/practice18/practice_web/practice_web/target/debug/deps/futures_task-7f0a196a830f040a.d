@@ -1,0 +1,10 @@
+/Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice18/practice_web/practice_web/target/debug/deps/futures_task-7f0a196a830f040a.rmeta: /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/lib.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/spawn.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/future_obj.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/noop_waker.rs
+
+/Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice18/practice_web/practice_web/target/debug/deps/libfutures_task-7f0a196a830f040a.rlib: /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/lib.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/spawn.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/future_obj.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/noop_waker.rs
+
+/Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice18/practice_web/practice_web/target/debug/deps/futures_task-7f0a196a830f040a.d: /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/lib.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/spawn.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/future_obj.rs /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/noop_waker.rs
+
+/Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/lib.rs:
+/Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/spawn.rs:
+/Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/future_obj.rs:
+/Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/futures-task-0.3.26/src/noop_waker.rs:

@@ -1,0 +1,7 @@
+/Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice18/practice_web/practice_web/target/debug/deps/tinyvec_macros-44dd60ec31b1b274.rmeta: /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/tinyvec_macros-0.1.1/src/lib.rs
+
+/Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice18/practice_web/practice_web/target/debug/deps/libtinyvec_macros-44dd60ec31b1b274.rlib: /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/tinyvec_macros-0.1.1/src/lib.rs
+
+/Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice18/practice_web/practice_web/target/debug/deps/tinyvec_macros-44dd60ec31b1b274.d: /Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/tinyvec_macros-0.1.1/src/lib.rs
+
+/Users/zhenyu.jiang/.cargo/registry/src/rsproxy.cn-8f6827c7555bfaf8/tinyvec_macros-0.1.1/src/lib.rs:

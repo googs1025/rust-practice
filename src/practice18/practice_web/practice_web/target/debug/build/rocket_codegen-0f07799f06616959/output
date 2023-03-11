@@ -1,0 +1,2 @@
+cargo:warning=Rocket was unable to check rustc compiler compatibility.
+cargo:warning=Build may fail due to incompatible rustc version.

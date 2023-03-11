@@ -1,0 +1,3 @@
+cargo:rerun-if-changed=build/main.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice18/practice_web/practice_web/target/debug/build/typenum-b534a862f4aa4789/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/zhenyu.jiang/Desktop/rust_Practice/mypro/src/practice18/practice_web/practice_web/target/debug/build/typenum-b534a862f4aa4789/out/op.rs
