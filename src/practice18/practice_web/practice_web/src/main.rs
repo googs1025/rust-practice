@@ -48,14 +48,17 @@ fn user_detail_str(uid:String)-> Json<UserModel<String>> {
 fn rocket() -> _ {
     // 测试用
     // util::Init_mysql();
+    // util::List_user();
+    // util::Create_user();
+    // util::Pre_Select_user();
+    util::Insert_user();
 
-
-    init_db(5, 10); // 初始化连接池
-    let mut conn = db(); // 拿到db的连接实例
-    let ret: Option<(i32, String)> = conn.unwrap()
-        .query_first("select user_id,user_name from user order by user_id desc limit 1 ")
-        .unwrap();
-    println!("{:?}", ret.unwrap().1);
+    // init_db(5, 10); // 初始化连接池
+    // let mut conn = db(); // 拿到db的连接实例
+    // let ret: Option<(i32, String)> = conn.unwrap()
+    //     .query_first("select user_id,user_name from user order by user_id desc limit 1 ")
+    //     .unwrap();
+    // println!("{:?}", ret.unwrap().1);
 
     // 执行server
     rocket::build().mount("/", routes![index, users, users_detail_int, user_detail_str])
